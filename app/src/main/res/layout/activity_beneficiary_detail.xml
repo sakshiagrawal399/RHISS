@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <rural.rhiss.Util.TextViewCustom
+                android:id="@+id/headText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_color"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/headText"
+                android:layout_alignLeft="@+id/headText"
+                android:layout_alignRight="@+id/headText"
+                android:layout_alignStart="@+id/headText"
+                android:layout_below="@+id/headText"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/email"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text="@string/mobile"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/gender"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow12"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/state_name"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewStateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow13"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/district_name"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewDistrictName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/block_name"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewBlockName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/gp_name"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewGPName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/village_name"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <rural.rhiss.Util.TextViewCustom
+                    android:id="@+id/textViewVillageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text=""
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+
+            <Button
+                android:id="@+id/buttonDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tableRow5"
+                android:layout_alignStart="@+id/tableRow5"
+                android:layout_below="@+id/tableRow5"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_color"
+                android:text="@string/installment_details"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

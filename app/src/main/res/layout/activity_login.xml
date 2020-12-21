@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_dash" />
+
+  <!--  <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/menu_program_navigation_view" />
+    </android.support.v4.widget.DrawerLayout>
+-->
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/loginText"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/app_color"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:text="@string/loginOptions"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginText"
+        android:layout_marginLeft="25dp"
+        android:visibility="gone"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearPLILogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <rural.rhiss.Util.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1.4"
+                android:padding="25dp"
+                android:text="@string/pli_login"
+                android:textColor="@color/dark_grey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/arrow_icon" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBeneficiaryLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <rural.rhiss.Util.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1.4"
+                android:padding="25dp"
+                android:text="@string/beneficiary_login"
+                android:textColor="@color/dark_grey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/arrow_icon" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearGetLGDCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <rural.rhiss.Util.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1.4"
+                android:padding="25dp"
+                android:text="@string/get_lgd_code"
+                android:textColor="@color/dark_grey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+           <!-- <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/arrow_icon" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            card_view:cardBackgroundColor="@color/app_color"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="10dp"
+            card_view:cardCornerRadius="7dp"
+            android:layout_height="40dp">
+
+            <rural.rhiss.Util.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/app_color"
+                android:text="@string/loginOptions"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.8"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/pli_ligin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    card_view:cardBackgroundColor="@color/light_green"
+                    card_view:contentPadding="5dp"
+                    card_view:cardElevation="15dp"
+                    card_view:cardCornerRadius="7dp"
+                    android:layout_height="match_parent">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_city_hall"
+                            android:padding="35dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="PLI Login"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorGrey"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/beneficary_login"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:layout_marginRight="@dimen/space10"
+                    card_view:cardBackgroundColor="@color/light_green"
+                    card_view:contentPadding="5dp"
+                    card_view:cardElevation="15dp"
+                    card_view:cardCornerRadius="7dp"
+                    android:layout_height="match_parent">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_house"
+                            android:padding="35dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Beneficiary Login"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/location_code"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+
+                    card_view:cardBackgroundColor="@color/light_green"
+                    card_view:contentPadding="5dp"
+                    card_view:cardElevation="15dp"
+                    card_view:cardCornerRadius="7dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_map"
+                            android:padding="35dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Get Location Code"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/logout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:layout_marginRight="@dimen/space10"
+                    card_view:cardBackgroundColor="@color/light_green"
+                    card_view:contentPadding="5dp"
+                    card_view:cardElevation="15dp"
+                    card_view:cardCornerRadius="7dp"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_exits"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Exit"
+                            android:padding="5dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+-
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Version 1.6"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Content provided by MoRD, hosted and maintained by NIC"
+                    android:textSize="12sp"
+
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Disclaimer"
+                    android:textSize="14sp"
+
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/nic1"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

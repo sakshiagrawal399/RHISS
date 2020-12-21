@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:text="@string/NIC1"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="end"
+        android:text="Version: 1.0"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</LinearLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/loginText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_color"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/loginText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/inspection_date" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewInspDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/inspection_level" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewInspLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/latitude" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/longitude" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewLongitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/accuracy" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewAccuracy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewDevi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/deviation" />
+
+                    <rural.rhiss.Util.TextViewCustom
+                        android:id="@+id/textViewDeviation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_image" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_image"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout2"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_image"
+                        android:visibility="invisible" />
+
+
+                </TableRow>
+            </LinearLayout>
+
+            <rural.rhiss.Util.TextViewCustom
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout2"
+                android:layout_alignLeft="@+id/linearLayout2"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_alignStart="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout2"
+                android:text=""
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@+id/linearLayout2"
+                android:layout_alignLeft="@+id/linearLayout2"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_alignStart="@+id/linearLayout2"
+                android:layout_below="@+id/textViewAddress"
+                android:background="@drawable/shadow_background"
+                android:ems="10"
+                android:hint="@string/add_remark"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <rural.rhiss.Util.TextViewCustom
+                android:id="@+id/textViewMessageDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextRemark"
+                android:layout_alignLeft="@+id/editTextRemark"
+                android:layout_alignRight="@+id/editTextRemark"
+                android:layout_alignStart="@+id/editTextRemark"
+                android:layout_below="@+id/editTextRemark"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/textViewMessageDistance"
+                android:layout_alignLeft="@+id/textViewMessageDistance"
+                android:layout_alignRight="@+id/textViewMessageDistance"
+                android:layout_alignStart="@+id/textViewMessageDistance"
+                android:layout_below="@+id/textViewMessageDistance">
+
+
+                <Button
+                    android:id="@+id/buttonUpload"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/app_color"
+                    android:text="@string/upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/linear"
+                android:layout_alignLeft="@+id/linear"
+                android:layout_alignRight="@+id/linear"
+                android:layout_alignStart="@+id/linear"
+                android:layout_below="@+id/linear"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/orange"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

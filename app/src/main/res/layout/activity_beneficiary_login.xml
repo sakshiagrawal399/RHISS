@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@drawable/circle_shape_green_top"
+                android:layout_weight="0.7">
+
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/space5"
+                    android:src="@drawable/app_logo"
+                    android:background="@drawable/circle_back"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/space5"
+                        android:src="@drawable/app_logo"
+                        android:background="@drawable/circle_back"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="Beneficiary Login"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.2"
+                    android:weightSum="3"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent"
+                    android:layout_height="55dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Version 1.6"
+                            android:textSize="10sp"
+                            android:padding="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Content provided by MoRD, hosted and maintained by NIC"
+                            android:textSize="12sp"
+
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Disclaimer"
+                            android:textSize="14sp"
+
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/nic1"
+                            android:padding="8dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/space20"
+
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            card_view:cardBackgroundColor="@color/light_green"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="15dp"
+            card_view:cardCornerRadius="7dp"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space5"
+            android:layout_height="wrap_content"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/loginText"
+                android:layout_alignLeft="@+id/loginText"
+                android:layout_alignRight="@+id/loginText"
+                android:layout_alignStart="@+id/loginText"
+                android:layout_below="@+id/loginText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/editTextMobileNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/dark_grey"
+                    android:hint="@string/mobile_number"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:paddingLeft="30dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textInputLayout"
+                android:layout_alignLeft="@+id/textInputLayout"
+                android:layout_alignRight="@+id/textInputLayout"
+                android:layout_alignStart="@+id/textInputLayout"
+                android:layout_below="@+id/textInputLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextPLICode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pli_code"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textInputLayout2"
+                android:layout_alignLeft="@+id/checkBoxSavePassword"
+                android:layout_alignRight="@+id/textInputLayout2"
+                android:layout_alignStart="@+id/checkBoxSavePassword"
+                android:layout_below="@+id/checkBoxSavePassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/checkBox"
+                    android:layout_alignStart="@+id/checkBox"
+                    android:layout_below="@+id/checkBox"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/circle_shape_orange"
+                    android:text="@string/reset"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/checkBox2"
+                    android:layout_alignRight="@+id/checkBox2"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/circle_shape_green"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/loginText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_color"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:text="@string/beneficiary_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

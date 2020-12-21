@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context="rural.rhiss.LGDCode.GetLGDCodeActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <rural.rhiss.Util.TextViewCustom
+            android:id="@+id/loginText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_color"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="@string/get_lgd_code"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/loginText"
+            android:layout_alignStart="@+id/loginText"
+            android:layout_below="@+id/loginText"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select_state"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="#05ab9a"
+            android:textSize="15sp"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerState"
+            android:layout_alignStart="@+id/spinnerState"
+            android:layout_below="@+id/spinnerState"
+            android:hint="@string/select_district"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="#05ab9a"
+            android:textSize="15sp"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerDistrict"
+            android:layout_alignStart="@+id/spinnerDistrict"
+            android:layout_below="@+id/spinnerDistrict"
+            android:hint="@string/select_block"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="#05ab9a"
+            android:textSize="15sp"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerPanchayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerBlock"
+            android:layout_alignStart="@+id/spinnerBlock"
+            android:layout_below="@+id/spinnerBlock"
+            android:hint="@string/select_panchayat"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="#05ab9a"
+            android:textSize="15sp"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerVillage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerPanchayat"
+            android:layout_alignStart="@+id/spinnerPanchayat"
+            android:layout_below="@+id/spinnerPanchayat"
+            android:hint="@string/select_village"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="#05ab9a"
+            android:textSize="15sp"
+            app:met_floatingLabel="normal" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/spinnerVillage"
+            android:layout_alignLeft="@+id/spinnerVillage"
+            android:layout_alignRight="@+id/spinnerVillage"
+            android:layout_alignStart="@+id/spinnerVillage"
+            android:layout_below="@+id/spinnerVillage"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_color"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

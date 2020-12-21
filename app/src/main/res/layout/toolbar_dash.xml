@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/bg_bottom"
+    android:theme="@style/toolbarTheme"
+    app:contentInsetStartWithNavigation="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+
+        android:src="@drawable/nav_icon"
+        android:visibility="gone" />
+
+    <rural.rhiss.Util.TextViewCustom
+        android:id="@+id/tbTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ellipsize="end"
+        android:filterTouchesWhenObscured="true"
+        android:maxLines="2"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/app_color"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/nic" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:layout_margin="3dp"
+        android:layout_marginRight="2dp"
+        android:background="#DC6800" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/emblem" />
+</android.support.v7.widget.Toolbar>
